@@ -1,0 +1,83 @@
+site_name: Empty Proxy Rig Documentation
+site_url: https://hinatahugu29.github.io/EmptyProxyRig-docs/
+site_author: hinata_hugu
+site_description: Intuitive rig building addon using Empty objects
+
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+          nav_translations:
+            Home: ホーム
+            Getting Started: はじめに
+            Features: 機能
+            Empty Placement: Empty配置
+            Armature Tools: アーマチュア生成
+            Chain Manager: チェーン管理
+            IK Tools: IKツール
+            Reference: リファレンス
+            Command Reference: コマンドリファレンス
+            FAQ: よくある質問
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Features:
+    - Empty Placement: features/empty-placement.md
+    - Armature Tools: features/armature-tools.md
+    - Chain Manager: features/chain-manager.md
+    - IK Tools: features/ik-tools.md
+  - Reference:
+    - Command Reference: reference/commands.md
+  - FAQ: faq.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.keys
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/hinatahugu29
