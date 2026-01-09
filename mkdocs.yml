@@ -1,11 +1,11 @@
 site_name: Empty Proxy Rig Documentation
-site_url: ""
+site_url: https://hinatahugu29.github.io/EmptyProxyRig-docs/
 site_author: hinata_hugu
 site_description: Intuitive rig building addon using Empty objects
 
 theme:
   name: material
-  language: en
+  # language: en  <-- Material theme defaults to English
   palette:
     - scheme: slate
       primary: indigo
@@ -29,30 +29,30 @@ theme:
 
 plugins:
   - search
-  - i18n:
-      docs_structure: suffix
-      fallback_to_default: true
-      reconfigure_material: true
-      reconfigure_search: true
-      languages:
-        - locale: en
-          default: true
-          name: English
-          build: true
-        - locale: ja
-          name: 日本語
-          build: true
-          nav_translations:
-            Home: ホーム
-            Getting Started: はじめに
-            Features: 機能
-            Empty Placement: Empty配置
-            Armature Tools: アーマチュア生成
-            Chain Manager: チェーン管理
-            IK Tools: IKツール
-            Reference: リファレンス
-            Command Reference: コマンドリファレンス
-            FAQ: よくある質問
+  # - i18n:  <-- Temporarily disabled for stability
+  #     docs_structure: suffix
+  #     fallback_to_default: true
+  #     reconfigure_material: true
+  #     reconfigure_search: true
+  #     languages:
+  #       - locale: en
+  #         default: true
+  #         name: English
+  #         build: true
+  #       - locale: ja
+  #         name: 日本語
+  #         build: true
+  #         nav_translations:
+  #           Home: ホーム
+  #           Getting Started: はじめに
+  #           Features: 機能
+  #           Empty Placement: Empty配置
+  #           Armature Tools: アーマチュア生成
+  #           Chain Manager: チェーン管理
+  #           IK Tools: IKツール
+  #           Reference: リファレンス
+  #           Command Reference: コマンドリファレンス
+  #           FAQ: よくある質問
 
 nav:
   - Home: index.md
