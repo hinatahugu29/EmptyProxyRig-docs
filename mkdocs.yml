@@ -52,10 +52,12 @@ plugins:
             IK Tools: IKツール
             Reference: リファレンス
             Command Reference: コマンドリファレンス
+            Feature Guide: 機能詳解ガイド
             FAQ: よくある質問
 
 nav:
   - Home: index.md
+  - Feature Guide: feature-guide.md
   - Getting Started: getting-started.md
   - Features:
     - Empty Placement: features/empty-placement.md
