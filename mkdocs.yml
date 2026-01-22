@@ -1,0 +1,38 @@
+site_name: Rig Mechanist Docs
+theme:
+  name: material
+  language: en
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+
+nav:
+  - English:
+    - Introduction: en/index.md
+    - VisualSnapAssist: en/visual_snap_assist.md
+    - EmptyProxyRig: en/empty_proxy_rig.md
+    - BoneIK Tools: en/bone_ik_tools.md
+  - 日本語:
+    - はじめに: ja/index.md
+    - VisualSnapAssist: ja/visual_snap_assist.md
+    - EmptyProxyRig: ja/empty_proxy_rig.md
+    - BoneIK Tools: ja/bone_ik_tools.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
