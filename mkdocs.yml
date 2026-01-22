@@ -21,6 +21,7 @@ theme:
     - content.code.copy
 
 nav:
+  - Home: index.md
   - English:
     - Introduction: en/index.md
     - VisualSnapAssist: en/visual_snap_assist.md
